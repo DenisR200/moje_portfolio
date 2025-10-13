@@ -8,4 +8,12 @@
 <h2>Vítejte na mém portfoliu</h2>
 <p>Jmenuji se Denis Ramík. Jsem student informatiky a začínající webový vývojář. Zajímám se o tvorbu moderních webových aplikací v Pythonu, HTML, CSS a JavaScriptu.</p>
 <p>Na tomto webu najdete informace o mých projektech, zkušenostech a kontaktních údajích.</p>
+<h2>Umím tyto technologie</h2>
+<p>
+    <ul>
+    {%for prvek in technologie %}
+        <li>{{prvek}}</li>
+    {%endfor %}
+    </ul>
+</p>
 {% endblock %}
