@@ -8,51 +8,25 @@ root{
     font-size: 15px;
   }
 
-  .table-wrap{overflow:auto;border:1px solid var(--border);border-radius:8px}
-table{
-  width:100%;
-  border-collapse:collapse;
-  min-width:780px;
-}
-thead th{
-  text-align:left;
-  padding:12px 14px;
-  background:#fafafa;
-  border-bottom:1px solid var(--border);
-  font-weight:700;
-  color:var(--muted);
-  position:sticky;
-  top:0;
-}
-tbody td{
-  padding:12px 14px;
-  border-bottom:1px solid #f3f3f3;
-  vertical-align:middle;
-}
-.row-actions{display:flex;gap:8px}
-.icon-btn{
-  border:1px solid var(--border);
-  background:transparent;
-  padding:6px 8px;
-  border-radius:6px;
-  cursor:pointer;
-  color:var(--muted);
-  font-size:13px;
-}
-
-.small{font-size:13px;color:var(--muted)}
-.no-results{padding:24px;text-align:center;color:var(--muted)}
-@media (max-width:720px){
-  .container{padding:12px;margin:18px}
-  input#search{width:140px}
-}
-
-.btn{
-    background:var(--accent);
-    color:#fff;
-    border:none;
-    padding:8px 12px;
-    border-radius:6px;
-    cursor:pointer;
+  table.contacts{
+    width:70%;
+    margin:0 auto;
+    border-collapse:collapse;
+    background:var(--surface);
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 1px 2px rgba(0,0,0,0.04);
+  }
+  .contacts th, .contacts td{
+    text-align:left;
+    padding:12px 14px;
+    border-bottom:1px solid #f0f0f0;
+    font-size:14px;
+  }
+  .contacts thead th{
+    background:#fff;
     font-weight:600;
+  }
+  .contacts tbody tr:hover{
+    background:#fff;
   }

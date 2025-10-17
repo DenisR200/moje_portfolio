@@ -12,9 +12,33 @@
 <body>
   <main class="container">
     <h1>Seznam kontaktů</h1>
+    
+
+    <table id="contactsTable" class="contacts">
+      <thead>
+        <tr>
+          <th>Jméno</th>
+          <th>Příjmení</th>
+          <th>E-mail</th>
+          <th>Telefonní číslo</th>
+          <th>Kancelář</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr>
+            <td>{{users[3].jmeno}}</td>
+            <td>{{users[3].prijmeni}}</td>
+            <td><a href="mailto:{{users[3].email}}">{{users[3].email}}</a></td>
+            <td><a href="{{users[3].telefon}}">{{users[3].telefon}}</a></td>
+            <td><a href="{{users[3].kancelar}}">{{users[3].kancelar}}</a></td>
+          </tr>
+          
+      </tbody>
+    </table>
     <p>
       Otevřít kompletní tabulku kontaktů:
-      <a class="btn" href="kontakty.htm">Kontakty (contacts.html)</a>
+      <a class="btn" href="contacts.html">Kontakty (contacts.html)</a>
     </p>
   </main>
 </body>
