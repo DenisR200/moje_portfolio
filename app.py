@@ -49,12 +49,11 @@ def index():
 
     return render_template('index.htm', nazev_webu = nazev_webu, titulek_webu = titulek_webu, technologie = technologie)
 
-if __name__ == '__main__':
-    app.run(debug=True)
 
-@app.route('/')
+
+@app.route('/contacts')
 def contacts():
-    return render_template("contacts.html")
+    return render_template("contacts.html", users = users)
     
 if __name__ == '__main__':
     app.run(debug=True)
