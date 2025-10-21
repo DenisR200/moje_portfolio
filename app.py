@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-
+from data import users, nazev_webu, popis, technologie, titulek_webu
 
 app = Flask(__name__)
 
