@@ -74,7 +74,17 @@
 </tbody>
 
 <tbody>
-        
+  {%for id, user in users.items() %}
+
+  {% if user.is_authenticated %}
+    <tr class="radek">
+      <td>{{users[5].jmeno}}</td>
+      <td>{{users[5].prijmeni}}</td>
+      <td><a href="mailto:{{users[3].email}}">{{users[5].email}}</a></td>
+      <td><a href="{{users[3].telefon}}">{{users[5].telefon}}</a></td>
+      <td><a href="{{users[3].kancelar}}">{{users[5].kancelar}}</a></td>
+    </tr>
+    {% else %}
   <tr>
     <td>{{users[5].jmeno}}</td>
     <td>{{users[5].prijmeni}}</td>
@@ -82,7 +92,8 @@
     <td><a href="{{users[3].telefon}}">{{users[5].telefon}}</a></td>
     <td><a href="{{users[3].kancelar}}">{{users[5].kancelar}}</a></td>
   </tr>
-  
+  {% endif %}
+
 </tbody>
 
     </table>
