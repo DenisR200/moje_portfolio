@@ -15,5 +15,14 @@
         <li>{{prvek}}</li>
     {%endfor %}
     </ul>
+
+    <form>
+        Zadejte svou e-mailovou adresu: <input type="text" name="email">
+        <input type="submit" value="Odeslat">
+    </form>
+    <p>
+        Děkujeme za Váš e-mail: {{email}}
+    </p>
+
 </p>
 {% endblock %}
